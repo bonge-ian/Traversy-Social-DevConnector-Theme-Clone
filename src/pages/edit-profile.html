@@ -1,0 +1,141 @@
+---
+title: Edit Profile
+caption-header: Create Your Profile
+caption-text: Let's get some information to make your profile stand out
+---
+<section id="edit-profile">
+    <div class="grid-container">
+        <div class="margin-top-2"></div>
+        <div class="grid-x grid-padding-x align-center">
+            <div class="small-10 cell">
+                {{> captions}}
+            </div>
+        </div>
+
+        <div class="grid-x grid-padding-x align-center">
+            <div class="small-10 cell">
+                <form id="profile-form" novalidate data-abide>
+                    <div data-abide-error class="alert callout" style="display: none;">
+                        <p><i class="fas fa-exclamation-circle"></i> There are some errors in your form.</p>
+                    </div>
+                    <div class="form-group">
+                        <select name="pos" id="pos" required>
+                            <option value="">Select Professional Status</option>
+                            <option value="1">Senior Developer</option>
+                            <option value="2">Junior Developer</option>
+                            <option value="3">Intern</option>
+                        </select>
+                        <small>Give us an idea of where you are in your career</small>
+                        <div class="form-error">This is required</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="company" id="company" placeholder="Your/Work Company" required>
+                        <small>Your company or the one you work for</small>
+                        <div class="form-error">This field is required</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="website" id="website"
+                            placeholder="Website eg. https://abc.co.ke or abc.co.ke" pattern="website">
+                        <small>Your own site or company/organization website</small>
+                        <div class="form-error">You must enter a valid url.</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="location" id="location" placeholder="Current Location" required>
+                        <small>City/Town and County eg (Umoja, Nairobi County)</small>
+                        <div class="form-error">This is required</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="skills" id="skills" placeholder="Your Skills" required>
+                        <small>Use a comma separated string to outline your skills eg.(PHP,HTML,CSS...)</small>
+                        <div class="form-error">This is required and should be a comma separated string</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="github" id="github" placeholder="Github/BitBucket Username">
+                        <small>If you want your latest repos and a Github link, include your username</small>
+                        <div class="form-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="bio" id="bio" rows="3" placeholder="Short Bio"></textarea>
+                        <small>Tell us a little about yourself</small>
+                    </div>
+
+                    <div class="margin-vertical-1">
+                        <span class="label primary">Add Social Media</span>
+                        <span>Optional</span>
+                    </div>
+
+                    <div class="form-group social">
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-1">
+                                <label class="middle text-right" >
+                                    <i class="fab fa-twitter" ></i>
+                                </label>
+                            </div>
+                            <div class="cell small-11">
+                                <input type="text" name="Twitter" id="Twitter" placeholder="Twitter URL" pattern="url">
+                                <div class="form-error">Please enter a valid url</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group social">
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-1">
+                                <label class="middle text-right" >
+                                    <i class="fab fa-facebook" ></i>
+                                </label>
+                            </div>
+                            <div class="cell small-11">
+                                <input type="text" name="Facebook" id="Facebook" placeholder="Facebook URL" pattern="url">
+                                <div class="form-error">Please enter a valid url</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group social">
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-1">
+                                <label class="middle text-right">
+                                    <i class="fab fa-instagram"></i>
+                                </label>
+                            </div>
+                            <div class="cell small-11">
+                                <input type="text" name="Instagram" id="Instagram" placeholder="Instagram URL" pattern="url">
+                                <div class="form-error">Please enter a valid url</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group social">
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-1">
+                                <label class="middle text-right">
+                                    <i class="fab fa-linkedin"></i>
+                                </label>
+                            </div>
+                            <div class="cell small-11">
+                                <input type="text" name="LinkedIn" id="LinkedIn" placeholder="LinkedIn URL" pattern="url">
+                                <div class="form-error">Please enter a valid url</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group social">
+                        <div class="grid-x grid-padding-x">
+                            <div class="cell small-1">
+                                <label class="middle text-right">
+                                    <i class="fab fa-youtube"></i>
+                                </label>
+                            </div>
+                            <div class="cell small-11">
+                                <input type="text" name="Youtube" id="Youtube" placeholder="Youtube URL" pattern="url">
+                                <div class="form-error">Please enter a valid url</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="button-group margin-vertical-1">
+                        <button type="submit" class="button success margin-right-1">Submit</button>
+                        <a href="{{root}}dashboard.html" class="button">Go back</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

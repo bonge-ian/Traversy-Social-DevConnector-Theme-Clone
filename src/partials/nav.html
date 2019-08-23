@@ -1,0 +1,28 @@
+<nav class="top-bar">
+    <div class="top-bar-left">
+        <ul class="menu">
+            <li class="menu-text">
+                <a href="index.html">
+                    <i class="fab fa-periscope"></i>
+                    Connect Dev.
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="top-bar-right">
+        <ul class="menu">
+            <li><a href="developers.html">Developers</a></li>
+            {{#unlesspage 'register' 'login' 'index' 'developers'}}
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="dashboard.html"><i class="fas fa-user"></i><span>Dashboard</span></a></li>
+                <li><a href="login.html"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
+            {{/unlesspage}}
+
+            {{#unlesspage 'dashboard' 'posts' 'add-education' 'edit-profile' 'add-experience' 'profile'}}
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+            {{/unlesspage}}
+
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,58 @@
+---
+title: Add A Post
+caption-header: Posts
+caption-text: Welcome to the community
+---
+<section id="posts">
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x align-center">
+            <div class="cell small-10">
+                {{>captions}}
+
+                <div class="callout radius success font-bold">Say Something</div>
+
+                <form action="#">
+                    <textarea name="post" id="post" rows="3" placeholder="Create a post"></textarea>
+                    <button type="submit" class="button primary radius">Create Post</button>
+                </form>
+
+                <!-- posts -->
+                {{#repeat 2}}
+                    <div class="callout radius padding-horizontal-2">
+                        <div class="grid-x grid-padding-x align-center-middle">
+                            <div class="cell small-12 medium-3">
+                                <div class="grid-y grid-padding-y align-center-middle">
+                                    <a href="{{root}}profile.html">
+                                        <img src="https://www.fakepersongenerator.com/Face/female/female2017102615479285.jpg" alt="dev1" class="pill">
+                                        <h4 class="secondary text-center margin-top-1">Kinyan Boy</h4>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cell small-12 medium-9">
+                                <div class="grid-x grid-padding-x">
+                                    <div class="cell small-12">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque ad perferendis deserunt animi magni provident recusandae maiores. Dolorem, accusantium? Cum non veritatis quis ducimus earum consequatur suscipit, a, consequuntur consectetur numquam nostrum nesciunt sunt!</p>
+                                    </div>
+                                    <div class="cell small-12">
+                                        <div class="button-group">
+                                            <button href="#" class="button" id="like">
+                                                <i class="fas fa-thumbs-up"></i>
+                                                5
+                                            </button>
+                                            <button href="#" class="button warning">
+                                                <i class="fas fa-thumbs-down"></i>
+                                                2
+                                            </button>
+                                            <button class="button success">Discussion</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {{/repeat}}
+
+            </div>
+        </div>
+    </div>
+</section>

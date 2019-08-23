@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: $dark-gray;
+}
+.caption {
+    font: {
+        weight: 600;
+        size: 3rem;
+    }
+    color: $primary-color;
+}
+.lead {
+    .fas,
+    .fab {
+        margin-right: 0.7rem;
+    }
+}
+.form-group {
+    &.social {
+        label {
+
+            i {
+                font-size: 2rem;
+                vertical-align: middle;
+                color: $overlay-bg;
+            }
+        }
+        input, [type="text"] {
+            margin-top: 0.3rem;
+        }
+    }
+    margin-bottom: 1.4rem;
+
+    small {
+        font-weight: 400;
+    }
+
+    input,
+    [type='text'],
+    [type='password'],
+    [type='date'],
+    [type='datetime'],
+    [type='datetime-local'],
+    [type='month'],
+    [type='week'],
+    [type='email'],
+    [type='number'],
+    [type='search'],
+    [type='tel'],
+    [type='time'],
+    [type='url'],
+    [type='color'],
+    select,
+    textarea {
+        margin-bottom: 0 !important;
+    }
+
+    .form-error {
+        margin-top: 0.2rem !important;
+    }
+}
+
+#helper {
+    font-size: 1.056rem;
+    a {
+        color: $medium-light-blue;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.button.success {
+    &, &:hover {
+        color: $white;
+    }
+}
+.pill {
+    border-radius: 50%;
+}

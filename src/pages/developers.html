@@ -1,0 +1,52 @@
+---
+title: Developers
+caption-header: Developers
+caption-text: Browse and connect with developers
+---
+
+<section id="developers">
+    <div class="grid-container">
+        <div class="margin-top-2"></div>
+        <div class="grid-x grid-padding-x align-center">
+            <div class="cell small-10">
+                {{>captions}}
+            </div>
+        </div>
+        
+        <div class="grid-x grid-padding-x grid-margin-y align-center">
+            {{#repeat 3}}
+                <div class="cell small-10">
+                    <div class="callout radius padding-2">
+                        <div class="grid-container">
+                            <div class="grid-x grid-padding-x align-center-middle">
+                            <div class="small-10 medium-8">
+                                <div class="grid-x grid-padding-x grid-margin-y align-center-middle" id="short-profile">
+                                    <div class="cell medium-4 small-11">
+                                        <img src="https://www.fakepersongenerator.com/Face/female/female2017102615479285.jpg" alt="dev1" class="pill">
+                                    </div>
+                                    <div class="cell medium-8 small-11">
+                                        <h5 class=" font-bold">Kinyan Boy</h5>
+                                        <div class="desc">
+                                            <p>Developer at iTec</p>
+                                            <p>Nairobi, Kenya</p>
+                                        </div>
+                                        <a href="{{root}}profile.html" class="button secondary">View Profile</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="cell small-10 medium-4 hide-for-small-only">
+                                <ul class="no-bullet">
+                                    {{#each skillset.skills}}
+                                        <li><i class="fas fa-check"></i>{{ skill }}</li>
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            {{/repeat}}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,43 @@
+---
+title: Sign Up
+caption-header: Sign Up
+caption-text: Create your account
+---
+
+<section id="register">
+    <div class="grid-container ">
+        <div class="margin-3">
+            <div class="grid-x grid-padding x-grid-margin-x align-center">
+                <div class="cell small-10">
+                    {{>captions}}
+                    <form id="register-form" data-abide novalidate>
+                        <div data-abide-error class="alert callout" style="display: none;">
+                            <p><i class="fas fa-exclamation-circle"></i> There are some errors in your form.</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" class="radius" required>
+                            <span class="form-error">Name is required.</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" class="radius" required>
+                            <small class="">This site uses Gravatar, so if you want a profile image, use a Gravatar email</small>
+                            <span class="form-error">Email is required.</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" class="radius" required>
+                            <span class="form-error">Password is required & should have a minimum of 6 characters</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Confirm Password" class="radius" required>
+                            <span class="form-error">Confirm password is required & should match password entered above</span>
+                        </div>
+
+                        <button type="submit" class="button secondary">Register</button>
+                    </form>
+                    
+                    <p id="helper">Already have an account? <a href="login.html">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

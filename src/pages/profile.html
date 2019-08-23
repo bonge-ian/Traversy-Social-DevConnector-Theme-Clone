@@ -1,0 +1,132 @@
+---
+title: My Profile
+---
+
+<section id="profile">
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x align-center">
+            <div class="cell small-10">
+                <a href="{{root}}developers.html" class="button" id="back">Back to Profiles</a>
+
+                <div class="radius callout top-callout">
+                    <div class="grid-y grid-margin-y align-center-middle">
+                        <div class="cell small-12">
+                            <img src="https://www.fakepersongenerator.com/Face/female/female2017102615479285.jpg" alt="dev1" class="pill">
+                        </div>
+                        <div class="cell small-12 text-center">
+                            <h4>Kinyan Boy</h4>
+                            <p>Developer at iTec.ke</p>
+                            <p>Nairobi, KE</p>
+
+                            <div class="button-group align-center">
+                                <a href="#">
+                                    <i class="fas fa-globe"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-x grid-padding-x align-center">
+            <div class="cell small-10">
+                <div class="radius callout text-center padding-2 skill-callout">
+                    <h3>Kinyan Boy</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident magni quasi odit at recusandae sint inventore, atque temporibus error dicta illo quia animi officia reprehenderit.</p>
+                    <hr>
+                    <h3>Skill Set</h3>
+                    <ul class="skills">
+                        {{#each skillset.skills}}
+                            <li><i class="fas fa-check"></i>{{ skill }}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-x grid-padding-x align-center">
+            <div class="cell small-10">
+                <div class="grid-x grid-padding-x" id="exp" data-equalizer data-equalize-on="medium">
+                    <div class="cell small-12 medium-6">
+                        <div class="radius callout padding-2" data-equalizer-watch>
+                            <div class="grid-y grid-padding-y">
+                                <div class="cell">
+                                    <h3>Experiences</h3>
+                                    <p class="font-bold">iTec.ke</p>
+                                    <p>Nov 2018 - Current</p>
+                                    <p><strong>Position: </strong>Junior Developer</p>
+                                    <p><strong>Description: </strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda impedit laudantium neque ullam doloremque est nemo deleniti consequatur itaque sequi tenetur id exercitationem commodi recusandae, laborum quaerat ipsum perspiciatis temporibus cum distinctio velit.</p>
+                                </div>
+                                <div class="cell">
+                                    <p class="font-bold">Fanta Tech</p>
+                                    <p>Jan 2015 - Aug 2017</p>
+                                    <p><strong>Position: </strong>IT Support</p>
+                                    <p><strong>Description: </strong>Lorem ipsum dolor, sit amet consectetur adipisicingelit. Assumenda impedit laudantium neque ullam doloremque est nemo deleniti consequatur itaque sequi tenetur id exercitationem commodi recusandae, laborum quaerat ipsum perspiciatis temporibus cum distinctio velit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell small-12 medium-6">
+                        <div class="radius callout padding-2" data-equalizer-watch>
+                             <div class="grid-y grid-padding-y">
+                                 <div class="cell">
+                                     <h3>Education</h3>
+                                     <p class="font-bold">University of Kirinyaga</p>
+                                     <p>Sept 2012 - April 2015</p>
+                                     <p><strong>Degree: </strong>Bsc. Computer Science and Engineering</p>
+                                     <p><strong>Field of Study: </strong>Computer Science</p>
+                                     <p><strong>Description: </strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima cupiditate dicta ducimus quod? Qui veniam ab totam a?</p>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="margin-top-1"></div>
+        <div id="github-repo">
+            <div class="grid-x grid-padding-x align-center">
+                <div class="cell small-10">
+                    <h3><i class="fab fa-github margin-right-1"></i>Github Repos</h3>
+                    {{#repeat 3}}
+                        <div class="callout radius padding-2">
+                            <div class="grid-x grid-padding-x">
+                                <div class="cell medium-9 small-7">
+                                    <h5>Repo One</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, aut.</p>
+                                </div>
+                                <div class="cell medium-3 small-5">
+                                    <div class="grid-y">
+                                        <div class="cell">
+                                            <span class="label secondary">Stars: 46</span>
+                                        </div>
+                                        <div class="cell">
+                                            <span class="label primary">Watchers: 30</span>
+                                        </div>
+                                        <div class="cell">
+                                            <span class="label">Forks: 45</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{/repeat}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

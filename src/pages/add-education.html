@@ -1,0 +1,67 @@
+---
+title: Education
+caption-header: Add Your Education
+caption-text: Add your educational background
+---
+
+<section id="add-education">
+    <div class="grid-container">
+        <div class="margin-top-2"></div>
+        <div class="grid-x grid-padding-x align-center">
+            <div class="small-10 cell">
+                {{> captions}}
+            </div>
+        </div>
+
+        <div class="grid-x grid-padding-x align-center">
+            <div class="small-10 cell">
+                <form id="education-form" novalidate data-abide>
+                    <div data-abide-error class="alert callout" style="display: none;">
+                        <p><i class="fas fa-exclamation-circle"></i> There are some errors in your form.</p>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="School" id="School" placeholder="School or Bootcamp eg. Senior Dev"
+                            required>
+                        <div class="form-error">This is required</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="degree" id="degree" placeholder="Degree or Certificate" required>
+                        <div class="form-error">This field is required</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="field" id="field" placeholder="Field of Study/Major">
+                    </div>
+                    <div class="form-group">
+                        <label for="start date">From</label>
+                        <input type="date" name="start date" id="start date" placeholder="mm/dd/yyyy" required
+                            pattern="month_day_year">
+                        <div class="form-error">This is required and should follow (month/day/year) format</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="end date">End</label>
+                        <input type="date" name="end date" id="end date" placeholder="mm/dd/yyyy"
+                            pattern="month_day_year">
+                        <div class="form-error">This is should follow (month/day/year) format</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="current">
+                            <input type="checkbox" name="current" id="current">
+                            Current School
+                        </label>
+
+                    </div>
+                    <div class="form-group">
+                        <textarea name="desc" id="desc" rows="3" placeholder="Program Description" required></textarea>
+                        <div class="form-error">This is required</div>
+                    </div>
+
+
+                    <div class="button-group margin-vertical-1">
+                        <button type="submit" class="button success margin-right-1">Submit</button>
+                        <a href="{{root}}dashboard.html" class="button">Go back</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
